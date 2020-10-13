@@ -1,0 +1,13 @@
+<h5 style="margin-top: 40px;color: rgb(12, 116, 214)"><u>Bài 4:</u> Hãy lọc ra một danh sách mới những người có điểm thi lớn hơn 8 và quê ở Hai Phong.</h5>
+<table class= "table">
+  <tr>
+    <th>Họ tên</th>
+    <th>Điểm Thi</th>
+  </tr>
+  <tr *ngFor ="let m of s">
+    <td>{{m.hoten}}</td>
+    <td>{{m.quequan}}</td>
+    <td>{{m.dthi}}</td>
+  </tr>
+</table>
+<button class="btn btn-danger" (click)="Loc()" >Lọc</button>

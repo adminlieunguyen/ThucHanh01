@@ -1,0 +1,33 @@
+<h5 style="margin-top: 40px; color: rgb(12, 116, 214)"><u>Bài 1:</u>  Tính S(n) = x + x^2 + x^3 + … + x^n</h5>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-2"  style="text-align: right;">
+       Nhập giá trị n:
+      </div>
+      <div class="col-sm-4">
+        <input type="text" [(ngModel)]="n" style="width: 100%;">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2" style="text-align: right;">
+       Nhập giá trị x:
+      </div>
+      <div class="col-sm-4">
+        <input type="text" [(ngModel)]="x"  style="width: 100%; margin-top: 10px;">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-4" style="text-align: left;">
+        <span><h5>Kết quả là: {{s}}</h5></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-4" style="text-align: right; margin-top: -20px;">
+        <button class="btn btn-danger" (click)="Tinh()" [disabled]="n==null || x==null" >Tính</button>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,42 @@
+<h5 style="margin-top: 40px;color: rgb(12, 116, 214)"><u>Bài 7:</u> Sử dụng kỹ thuật lập trình hướng đối tượng giải phương trình trùng phương </h5>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2"  style="text-align: right;">
+     Nhập A:
+    </div>
+    <div class="col-sm-4">
+      <input type="text" [(ngModel)]="A" style="width: 100%;">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2" style="text-align: right;">
+     Nhập B:
+    </div>
+    <div class="col-sm-4">
+      <input type="text" [(ngModel)]="B"  style="width: 100%; margin-top: 10px;">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2"  style="text-align: right;">
+     Nhập C:
+    </div>
+    <div class="col-sm-4">
+      <input type="text" [(ngModel)]="C" style="width: 100%;">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-4" style="text-align: right;margin-top: 10px;">
+      <button *ngIf="A != 0" class="btn btn-danger"  (click)="Tinh()" [disabled]="A==null || B==null || C==null" >Tính</button>
+    </div>
+  </div>
+  </div>
+
+    <h5>{{alert}}</h5>
+    <p *ngIf="X1 != undefined">x1 = {{ X1 }}</p>
+    <p *ngIf="X2 != undefined">x2 = {{ X2 }}</p>
+    <p *ngIf="X3 != undefined">x3 = {{ X3 }}</p>
+    <p *ngIf="X4 != undefined">x4 = {{ X4 }}</p>
+
+

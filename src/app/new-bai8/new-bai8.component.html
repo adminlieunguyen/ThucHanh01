@@ -1,0 +1,33 @@
+<h5 style="margin-top: 40px;color: rgb(12, 116, 214)"><u>Bài 8:</u> Tính thể tích của hình chóp khi biết diện tích đáy và chiều cao</h5>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2"  style="text-align: right;">
+     Nhập Diện Tích Đáy:
+    </div>
+    <div class="col-sm-4">
+      <input type="text" [(ngModel)]="dt" style="width: 100%;">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2" style="text-align: right;">
+     Nhập Chiều Cao:
+    </div>
+    <div class="col-sm-4">
+      <input type="text" [(ngModel)]="h"  style="width: 100%; margin-top: 10px;">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-4" style="text-align: left;">
+      <span><h5>Kết quả là: {{kq}}</h5></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-4" style="text-align: right;margin-top: -20px;">
+      <button class="btn btn-danger" (click)="Tinh()" [disabled]="dt==null || h==null" >Tính</button>
+    </div>
+  </div>
+</div>

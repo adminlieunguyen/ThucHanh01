@@ -1,0 +1,12 @@
+<h5 style="margin-top: 40px;color: rgb(12, 116, 214)"><u>Bài 3: </u>  Hãy sắp xếp danh sách tên sau theo thứ tự tăng dần của trường họ tên(Ưu tiên Tên sau đó đến Họ)</h5>
+<table class= "table table-striped">
+  <tr>
+    <th>Họ tên</th>
+    <th>Điểm Thi</th>
+  </tr>
+  <tr *ngFor ="let m of s">
+    <td>{{m.hoten}}</td>
+    <td>{{m.dthi}}</td>
+  </tr>
+</table>
+<button class="btn btn-danger" (click)="Tinh()" >Sắp Xếp </button>
